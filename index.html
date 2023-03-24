@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport, content="width=device-width, initial-width="1.0">
+    <title>ColdStone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;
+    0,700;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    <body>
+        <!-----hero section start-->
+        <div class="circle"></div>
+
+        <div class="hero">
+            <nav>
+                <h2 class="logo">Cold<span>Stone</span></h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">What's New</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <a href="#" class="btn">Subscribe</a>
+            </nav><br><br>
+            <div class="content">
+                <div class="textBox">
+                    <h2>It's not just <strong>ColdStone</strong> <br>It's <span>Starbucks</span> </h2>
+                        <p>
+                            Cold Stone Creamery is an American international ice cream parlor chain. 
+                            Headquartered in Scottsdale, Arizona, the company is owned and operated by Kahala Brands. 
+                            The company's main product is premium ice 
+                            cream made with approximately 12–14% butterfat, made on location and customized for 
+                            patrons at time of order. 
+                        </p>
+                        <a href="">Learn More</a>
+                    
+                </div>
+                <div class="imgBox">
+                    <img src="img/img3.png" class="starbucks">
+                </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="img/thumb3.png" onclick="imgSlider('img/img3.png');changeCircleColor('rgb(223, 65, 65)')"></li>
+                <li><img src="img/thumb4.png" onclick="imgSlider('img/img4.png');changeCircleColor('rgb(31, 29, 30)')"></li>
+                <li><img src="img/thumb5.png" onclick="imgSlider('img/img5.png');changeCircleColor('rgb(110, 149, 175)')"></li>
+            </ul>
+
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                
+            </div>
+
+            </div>
+
+            <script type="text/javascript">
+                function imgSlider(anything){
+                    document.querySelector('.starbucks').src = anything;
+                }
+                function changeCircleColor(color){
+                    const circle = document.querySelector('.circle');
+                    circle.style.background = color
+                }
+            </script>
+            </body>
+            </html>
